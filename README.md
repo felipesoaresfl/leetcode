@@ -1,2 +1,3 @@
-# leetcode-exercices
+# Leetcode Exercices
+
 Exercices from leetcode.com
