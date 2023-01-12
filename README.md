@@ -4,12 +4,12 @@ Exercises from [leetcode.com](leetcode.com)
 
 ### Select difficulty level
 
-| <span style="color: green"> Easy <span>  | <span style="color: yellow"> Medium <span> | <span style="color: red"> Hard <span> |
-|--- |--- |--- |
-
 ```
 cd <level_difficulty>
 ```
+| Easy | Medium | Hard |
+|--- |--- |--- |
+
 
 ## Python Setup
 
