@@ -1,3 +1,17 @@
-# Leetcode Exercices
+# Leetcode Exercises
 
-Exercices from [leetcode.com](leetcode.com)
+Exercises from [leetcode.com](leetcode.com)
+
+## Python Setup
+
+```
+cd python
+python <exercise_name>
+```
+
+## JavaScript Setup
+
+```
+cd javascript
+node <exerciseName>
+```
