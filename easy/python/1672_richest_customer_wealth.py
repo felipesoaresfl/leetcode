@@ -20,6 +20,6 @@ https://leetcode.com/problems/richest-customer-wealth/description/
 
 
 class Solution:
-    def maximum_wealth(accounts):
+    def maximumWealth(accounts):
         return max(sum(value) for value in accounts)
-    print(maximum_wealth([[2, 8, 7], [7, 1, 3], [1, 9, 5]]))
+    print(maximumWealth([[2, 8, 7], [7, 1, 3], [1, 9, 5]]))

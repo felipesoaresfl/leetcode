@@ -13,9 +13,9 @@ from collections import Counter
 
 
 class Solution:
-    def single_number(nums):
+    def singleNumber(nums):
         counter_numbers = Counter(nums)
         for number in nums:
             if counter_numbers[number] == 1:
                 return number
-    print(single_number([4, 1, 2, 1, 2]))
+    print(singleNumber([4, 1, 2, 1, 2]))

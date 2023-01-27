@@ -16,7 +16,7 @@ import itertools
 
 
 class Solution(object):
-    def num_tile_possibilities(tiles):
+    def numTilePossibilities(tiles):
         list = []
         sequences = []
         for letter in tiles:
@@ -25,4 +25,4 @@ class Solution(object):
             for sequence in itertools.permutations(list, item):
                 sequences.append(sequence)
         return (len(set(sequences)) - 1)
-    print(num_tile_possibilities("AAB"))
+    print(numTilePossibilities("AAB"))

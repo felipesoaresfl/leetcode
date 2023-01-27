@@ -4,13 +4,13 @@ can begin to grow, then bloom. Planting a seed takes time and so does
 the growth of a seed. You are given two 0-indexed integer arrays plantTime
 and growTime, of length n each:
 
-plantTime[i] is the number of full days it takes you to plant the ith seed. 
-Every day, you can work on planting exactly one seed. You do not have to 
-work on planting the same seed on consecutive days, but the planting of 
-a seed is not complete until you have worked plantTime[i] days on planting 
+plantTime[i] is the number of full days it takes you to plant the ith seed.
+Every day, you can work on planting exactly one seed. You do not have to
+work on planting the same seed on consecutive days, but the planting of
+a seed is not complete until you have worked plantTime[i] days on planting
 it in total.
-growTime[i] is the number of full days it takes the ith seed to grow after 
-being completely planted. After the last day of its growth, the flower blooms 
+growTime[i] is the number of full days it takes the ith seed to grow after
+being completely planted. After the last day of its growth, the flower blooms
 and stays bloomed forever.
 From the beginning of day 0, you can plant the seeds in any order.
 
@@ -23,7 +23,7 @@ https://leetcode.com/problems/earliest-possible-day-of-full-bloom/
 
 
 class Solution(object):
-    def earliest_full_bloom(plantTime, growTime):
+    def earliestFullBloom(plantTime, growTime):
         day_today = 0
         days_all_bloom = 0
 
@@ -32,7 +32,8 @@ class Solution(object):
         # plant first who takes the longest to grow
 
         for time_grow, time_plant in plant_grow_time:
-            days_all_bloom = max(days_all_bloom, (day_today + time_plant + time_grow))
+            days_all_bloom = max(days_all_bloom, (day_today +
+                                                  time_plant + time_grow))
             day_today += time_plant
         return days_all_bloom
-    print(earliest_full_bloom([1, 4, 3], [2, 3, 1]))
+    print(earliestFullBloom([1, 4, 3], [2, 3, 1]))
